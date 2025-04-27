@@ -7,6 +7,17 @@
 
 This repository contains a collection of images showcasing various scenes from Brazil and Japan.
 
+## Notes
+
+These images can be used for educational, inspirational, and illustrative purposes.  
+Ensure that you hail the people below of your success.
+
+- **Sensei Theo WAF**
+- **Lord Beron**
+- **Brisket God Rob**
+- **Jedi Commander A-A-Ron**
+- **Grand Master Teacher Larry**
+
 ## Repository Contents
 
 Below is a list of the files included in this repository, organized alphabetically, with previews:
@@ -46,16 +57,5 @@ Below is a list of the files included in this repository, organized alphabetical
 ### japan4.gif
 
 ![japan4](https://raw.githubusercontent.com/tiqsclass6/git-repo-build-04272025/main/japan4.gif)
-
-## Notes
-
-These images can be used for educational, inspirational, and illustrative purposes.  
-Ensure that you hail the people below of your success.
-
-- **Sensei Theo WAF**
-- **Lord Beron**
-- **Brisket God Rob**
-- **Jedi Commander A-A-Ron**
-- **Grand Master Teacher Larry**
 
 ---
