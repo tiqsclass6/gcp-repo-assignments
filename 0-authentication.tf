@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs
 
 provider "google" {
-  project     = "class-6-5-tiqs"
+  project     = "your-project-id" # Insert your project id here
   region      = "us-central1"
-  credentials = "class-6-5-tiqs-095c33bf9f57.json"
+  credentials = "yourjsoncert.json" # Insert your json credential here
 }

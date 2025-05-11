@@ -1,9 +1,9 @@
 # https://www.terraform.io/language/settings/backends/gcs
 terraform {
   backend "gcs" {
-    bucket      = "samba-saturday-050325"
+    bucket      = "your-project-id" # Insert your project ID here
     prefix      = "terraform/state"
-    credentials = "class-6-5-tiqs-095c33bf9f57.json"
+    credentials = "yourjsoncert.json" # Insert your json credential here
   }
   required_providers {
     google = {
