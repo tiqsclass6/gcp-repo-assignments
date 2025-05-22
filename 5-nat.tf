@@ -1,6 +1,8 @@
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router_nat
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_address
+
 # Iowa NAT
 
-# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router_nat
 resource "google_compute_router_nat" "iowa-nat" {
   name   = "iowa-nat"
   router = google_compute_router.iowa-router1.name
@@ -17,7 +19,6 @@ resource "google_compute_router_nat" "iowa-nat" {
   nat_ips = [google_compute_address.iowa-nat.self_link]
 }
 
-# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_address
 resource "google_compute_address" "iowa-nat" {
   name         = "iowa-nat"
   address_type = "EXTERNAL"
