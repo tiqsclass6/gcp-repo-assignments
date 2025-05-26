@@ -11,14 +11,3 @@ resource "google_compute_network" "main" {
   delete_default_routes_on_create = false
 
 }
-
-# Production VPC
-
-resource "google_compute_network" "prod" {
-  name                            = "prod"
-  routing_mode                    = "REGIONAL"
-  auto_create_subnetworks         = false
-  mtu                             = 1460
-  delete_default_routes_on_create = false
-
-}

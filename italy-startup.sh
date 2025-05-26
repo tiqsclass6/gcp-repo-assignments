@@ -22,16 +22,16 @@ cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Brazil - WebServer</title>
+  <title>Italy - WebServer</title>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
     body,h1,h3 {font-family: "Raleway", sans-serif}
     body, html {height: 100%}
     .bgimg {
-      background-image: url('https://brazil-2025.s3.us-east-1.amazonaws.com/brazil-bg.jpg');
+      background-image: url('https://img.freepik.com/premium-photo/close-up-united-states-italy-flag-black-wooden-background-3d-render_53060-200.jpg?w=1800');
       min-height: 100%;
       background-position: center;
       background-size: cover;
@@ -55,9 +55,9 @@ cat <<EOF > /var/www/html/index.html
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     <div class="w3-display-topleft w3-padding-large w3-xlarge"></div>
     <div class="w3-display-middle w3-center">
-      <iframe src="https://brazil-2025.s3.us-east-1.amazonaws.com/brazil5.gif"
-              width="220"
-              height="398"
+      <iframe src="https://www.bellazon.com/main/uploads/monthly_2016_02/dani-si2016_005.gif.cb8c912ed3125da2999ac1a2c865a0a0.gif"
+              width="256"
+              height="256"
               align="center"
               valign="middle"
               style="border-radius:10px;"
@@ -76,7 +76,7 @@ cat <<EOF > /var/www/html/index.html
       </h3>
     </div>
     <div class="w3-display-bottomleft w3-padding-small transparent-background outlined-text">
-      <h1>Brazil - WebServer</h1>
+      <h1>Italy - WebServer</h1>
       <p><b>Instance Name:</b> $(hostname -f)</p>
       <p><b>Instance Private IP Address: </b> $local_ipv4</p>
       <p><b>Zone: </b> $zone</p>
