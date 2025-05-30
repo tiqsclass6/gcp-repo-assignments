@@ -2,8 +2,8 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
 
 # Iowa VPC
-resource "google_compute_network" "iowa-vpc" {
-  name                            = "iowa-vpc"
+resource "google_compute_network" "iowa" {
+  name                            = "iowa"
   routing_mode                    = "REGIONAL"
   auto_create_subnetworks         = false
   mtu                             = 1460
@@ -12,8 +12,8 @@ resource "google_compute_network" "iowa-vpc" {
 }
 
 # Brazil VPC
-resource "google_compute_network" "brazil-vpc" {
-  name                            = "brazil-vpc"
+resource "google_compute_network" "brazil" {
+  name                            = "brazil"
   routing_mode                    = "REGIONAL"
   auto_create_subnetworks         = false
   mtu                             = 1460
@@ -22,8 +22,8 @@ resource "google_compute_network" "brazil-vpc" {
 }
 
 # Tokyo VPC
-resource "google_compute_network" "tokyo-vpc" {
-  name                            = "tokyo-vpc"
+resource "google_compute_network" "tokyo" {
+  name                            = "tokyo"
   routing_mode                    = "REGIONAL"
   auto_create_subnetworks         = false
   mtu                             = 1460

@@ -1,4 +1,7 @@
-# git-repo (050325) ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white) ![GCP](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
+# GitHub Assignment (05-03-2025)
+
+![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)
+![GCP](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
 
 This repository contains Terraform configurations for setting up a cloud infrastructure environment. The configurations are modularized into separate files for authentication, backend setup, and Virtual Private Cloud (VPC) networking.
 
@@ -21,8 +24,8 @@ This repository contains Terraform configurations for setting up a cloud infrast
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/tiqsclass6/git-repo-050325.git
-   cd git-repo-050325
+   git clone https://github.com/tiqsclass6/gcp-repo-assignments
+   cd gcp-repo-assignments
    code .
    ```
 
