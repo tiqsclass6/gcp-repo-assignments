@@ -1,4 +1,4 @@
-# GCP Assignment (05-17-2025)
+# GitHub Assignment (05-17-2025)
 
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)
 ![GCP](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
