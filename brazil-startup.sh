@@ -22,7 +22,7 @@ cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Brazil - Be A Man Level 4</title>
+  <title>Brazil - WebServer</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -76,9 +76,7 @@ cat <<EOF > /var/www/html/index.html
       </h3>
     </div>
     <div class="w3-display-bottomleft w3-padding-small transparent-background outlined-text">
-      <h1>Brazil - Be a Man Level 4 WebServer</h1>
-      <h3>I, TIQS, Thank You Sensei Theo & Lord Beron</h3>
-      <h3>Team Group Leader - John Sweeney</h3>
+      <h1>Brazil - WebServer</h1>
       <p><b>Instance Name:</b> $(hostname -f)</p>
       <p><b>Instance Private IP Address: </b> $local_ipv4</p>
       <p><b>Zone: </b> $zone</p>

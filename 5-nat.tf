@@ -3,9 +3,9 @@
 
 # Iowa NAT
 
-resource "google_compute_router_nat" "iowa-nat" {
-  name   = "iowa-nat"
-  router = google_compute_router.iowa-router1.name
+resource "google_compute_router_nat" "iowa" {
+  name   = "iowa"
+  router = google_compute_router.iowa1.name
   region = "us-central1"
 
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
@@ -16,11 +16,11 @@ resource "google_compute_router_nat" "iowa-nat" {
     source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
   }
 
-  nat_ips = [google_compute_address.iowa-nat.self_link]
+  nat_ips = [google_compute_address.iowa.self_link]
 }
 
-resource "google_compute_address" "iowa-nat" {
-  name         = "iowa-nat"
+resource "google_compute_address" "iowa" {
+  name         = "iowa"
   address_type = "EXTERNAL"
   network_tier = "PREMIUM"
   region       = "us-central1"
@@ -28,9 +28,9 @@ resource "google_compute_address" "iowa-nat" {
 
 # Tokyo NAT
 
-resource "google_compute_router_nat" "tokyo-nat" {
-  name   = "tokyo-nat"
-  router = google_compute_router.tokyo-router2.name
+resource "google_compute_router_nat" "tokyo" {
+  name   = "tokyo"
+  router = google_compute_router.tokyo2.name
   region = "asia-southeast1"
 
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
@@ -41,11 +41,11 @@ resource "google_compute_router_nat" "tokyo-nat" {
     source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
   }
 
-  nat_ips = [google_compute_address.tokyo-nat.self_link]
+  nat_ips = [google_compute_address.tokyo.self_link]
 }
 
-resource "google_compute_address" "tokyo-nat" {
-  name         = "tokyo-nat"
+resource "google_compute_address" "tokyo" {
+  name         = "tokyo"
   address_type = "EXTERNAL"
   network_tier = "PREMIUM"
   region       = "asia-southeast1"
@@ -53,9 +53,9 @@ resource "google_compute_address" "tokyo-nat" {
 
 # Brazil NAT
 
-resource "google_compute_router_nat" "brazil-nat" {
-  name   = "brazil-nat"
-  router = google_compute_router.brazil-router2.name
+resource "google_compute_router_nat" "brazil" {
+  name   = "brazil"
+  router = google_compute_router.brazil2.name
   region = "southamerica-east1"
 
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
@@ -66,11 +66,11 @@ resource "google_compute_router_nat" "brazil-nat" {
     source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
   }
 
-  nat_ips = [google_compute_address.brazil-nat.self_link]
+  nat_ips = [google_compute_address.brazil.self_link]
 }
 
-resource "google_compute_address" "brazil-nat" {
-  name         = "brazil-nat"
+resource "google_compute_address" "brazil" {
+  name         = "brazil"
   address_type = "EXTERNAL"
   network_tier = "PREMIUM"
   region       = "southamerica-east1"

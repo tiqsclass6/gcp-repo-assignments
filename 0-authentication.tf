@@ -3,5 +3,5 @@
 provider "google" {
   project     = "your-project-id"                 # Insert your project id here
   region      = "uscentral1"
-  credentials = "yourjsonkey.json"                # Insert your json credentials here
+  credentials = "yourjsonkey1.json"               # Insert your json credentials here
 }

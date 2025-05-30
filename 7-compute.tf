@@ -1,11 +1,11 @@
-resource "google_compute_instance" "iowa-vm" {
-  name         = "iowa-vm"
+resource "google_compute_instance" "iowa" {
+  name         = "iowa"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
