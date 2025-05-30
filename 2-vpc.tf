@@ -14,8 +14,8 @@ resource "google_compute_network" "main" {
 
 # Production VPC
 
-resource "google_compute_network" "prod" {
-  name                            = "prod"
+resource "google_compute_network" "production" {
+  name                            = "production"
   routing_mode                    = "REGIONAL"
   auto_create_subnetworks         = false
   mtu                             = 1460

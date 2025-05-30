@@ -2,6 +2,6 @@
 
 provider "google" {
   project     = "your-project-id" # Insert your project id here
-  region      = "uscentral1"
+  region      = "uscentral11"
   credentials = "yourjsoncert.json" # Insert your json credentials here
 }
