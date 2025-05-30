@@ -81,9 +81,9 @@ The Terraform configuration provisions the following Google Cloud resources:
   📚 [Documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service)
 
 - **google_compute_network**:
-  - **`iowa-vpc`**: 🇺🇸 Regional VPC with MTU 1460 and no auto-created subnets.
-  - **`brazil-vpc`**: 🇧🇷 Regional VPC with MTU 1460 and no auto-created subnets.
-  - **`tokyo-vpc`**: 🇯🇵 Regional VPC with MTU 1460 and no auto-created subnets.
+  - **`iowa`**: 🇺🇸 Regional VPC with MTU 1460 and no auto-created subnets.
+  - **`brazil`**: 🇧🇷 Regional VPC with MTU 1460 and no auto-created subnets.
+  - **`tokyo`**: 🇯🇵 Regional VPC with MTU 1460 and no auto-created subnets.
   - Common settings:
     - `routing_mode = "REGIONAL"`
     - `auto_create_subnetworks = false`
