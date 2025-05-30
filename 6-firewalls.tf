@@ -14,8 +14,8 @@ resource "google_compute_firewall" "allow-ssh" {
 
 # Allow HTTP-HTTPS (Web)
 
-resource "google_compute_firewall" "allow-webserver" {
-  name    = "allow-webserver"
+resource "google_compute_firewall" "allow-web" {
+  name    = "allow-web"
   network = google_compute_network.main.name
 
   allow {

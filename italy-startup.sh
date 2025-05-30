@@ -22,7 +22,7 @@ cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Italy - WebServer</title>
+  <title>Italy - Web Server</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -76,7 +76,7 @@ cat <<EOF > /var/www/html/index.html
       </h3>
     </div>
     <div class="w3-display-bottomleft w3-padding-small transparent-background outlined-text">
-      <h1>Italy - WebServer</h1>
+      <h1>Italy - Web Server</h1>
       <p><b>Instance Name:</b> $(hostname -f)</p>
       <p><b>Instance Private IP Address: </b> $local_ipv4</p>
       <p><b>Zone: </b> $zone</p>

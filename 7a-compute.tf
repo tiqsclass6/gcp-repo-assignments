@@ -1,7 +1,7 @@
 # Italy VM
 
-resource "google_compute_instance" "italy1" {
-  name         = "italy1"
+resource "google_compute_instance" "italy" {
+  name         = "italy"
   machine_type = "n2-standard-2"
   zone         = "europe-west8-a"
 
@@ -12,7 +12,7 @@ resource "google_compute_instance" "italy1" {
   }
 
   network_interface {
-    subnetwork = google_compute_subnetwork.italy-private.name
+    subnetwork = google_compute_subnetwork.italy.name
 
     access_config {}
   }
@@ -22,8 +22,8 @@ resource "google_compute_instance" "italy1" {
 
 # Tokyo VM
 
-resource "google_compute_instance" "tokyo1" {
-  name         = "tokyo1"
+resource "google_compute_instance" "tokyo" {
+  name         = "tokyo"
   machine_type = "n2-standard-2"
   zone         = "asia-southeast1-a"
 
@@ -34,7 +34,7 @@ resource "google_compute_instance" "tokyo1" {
   }
 
   network_interface {
-    subnetwork = google_compute_subnetwork.tokyo-private.name
+    subnetwork = google_compute_subnetwork.tokyo.name
 
     access_config {}
   }
@@ -44,8 +44,8 @@ resource "google_compute_instance" "tokyo1" {
 
 # Brazil VM
 
-resource "google_compute_instance" "brazil1" {
-  name         = "brazil1"
+resource "google_compute_instance" "brazil" {
+  name         = "brazil"
   machine_type = "n2-standard-2"
   zone         = "southamerica-east1-a"
 
@@ -56,7 +56,7 @@ resource "google_compute_instance" "brazil1" {
   }
 
   network_interface {
-    subnetwork = google_compute_subnetwork.brazil-private.name
+    subnetwork = google_compute_subnetwork.brazil.name
 
     access_config {}
   }

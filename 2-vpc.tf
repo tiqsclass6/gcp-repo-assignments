@@ -3,8 +3,8 @@
 
 # Main VPC
 
-resource "google_compute_network" "main" {
-  name                            = "main"
+resource "google_compute_network" "main1" {
+  name                            = "main1"
   routing_mode                    = "REGIONAL"
   auto_create_subnetworks         = false
   mtu                             = 1460

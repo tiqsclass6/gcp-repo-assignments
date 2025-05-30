@@ -2,7 +2,7 @@ terraform {
   backend "gcs" {
     bucket      = "your-bucket-name"  # Insert your bucket name here
     prefix      = "terraform/state"
-    credentials = "yourjsonkey.json"  # Insert your json credentials here
+    credentials = "yourjsonkey1.json"  # Insert your json credentials here
   }
   required_providers {
     google = {
