@@ -3,8 +3,12 @@
 
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)
 ![GCP](https://img.shields.io/badge/Cloud-Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
-![License](https://img.shields.io/github/license/tiqsclass6/gcp-repo-assignments)
 ![Last Commit](https://img.shields.io/github/last-commit/tiqsclass6/gcp-repo-assignments)
+![Repo Size](https://img.shields.io/github/repo-size/tiqsclass6/gcp-repo-assignments)
+![Open Issues](https://img.shields.io/github/issues/tiqsclass6/gcp-repo-assignments)
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Made with Terraform](https://img.shields.io/badge/Made%20with-Terraform-5F43E9?logo=terraform)
+![Status](https://img.shields.io/badge/Status-Complete-blue)
 
 This repository contains multiple modular GCP infrastructure deployments using **Terraform**. Each **branch** represents a specific assignment with regionally separated network architectures, VM customization scripts, and cloud automation practices. **Resources are added weekly to progressively build out the entire GCP network architecture—starting with authentication and backend configuration, then expanding through VPCs, subnets, NAT, firewall rules, and compute resources. The build culminates in the deployment of managed instance groups, autoscaling policies, regional HTTP load balancer, health checks, and multi-zone traffic distribution.**
 
@@ -61,6 +65,16 @@ This repository contains multiple modular GCP infrastructure deployments using *
   - Outputs file (`AA-outputs.tf`) for public IPs, names, etc.
 
 ---
+
+### 🔹 [`assignment-05312025`](https://github.com/tiqsclass6/gcp-repo-assignments/tree/assignment-05312025)
+
+- **Focus**: Complete multi-region infrastructure deployment with load balancing and autoscaling.
+- **Includes**:
+  - Regional instance templates and managed instance groups (MIGs)
+  - Global HTTP regional load balancer with backend services and health checks
+  - Autoscaling policy configuration
+  - `brazil.sh`, `italy.sh`, `iowa.sh`, and `tokyo.sh`
+  - Screenshot documentation for verification
 
 ## 🚀 Getting Started
 
