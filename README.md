@@ -88,6 +88,19 @@ This repository contains a modular, scalable Terraform configuration for deployi
 
 ---
 
+## 🚀 Deployment Instructions
+
+```bash
+gcloud auth application-default login
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+```
+
+---
+
 ## 📸 Show Your Work
 
 > Theses screenshots will show the **GCP infrastructure** setup and **Terraform** examples for this project.
@@ -119,21 +132,9 @@ This repository contains a modular, scalable Terraform configuration for deployi
   - **Console** ![LB Backend](/Screenshots/lb-backend.jpg)
   - **Terraform** ![TF LB Backend](/Screenshots/tf-lb-backend.jpg)
 - **Load Balancer Frontend Services**
-  - **Console** ![LB Frontend](/Screenshots/lb-frontend.jpg)
+  - **Console**
+    - ![LB Frontend](/Screenshots/lb-frontend.jpg)
   - **Terraform** ![TF LB Frontend](/Screenshots/tf-lb-frontend.jpg)
-
----
-
-## 🚀 Deployment Instructions
-
-```bash
-gcloud auth application-default login
-terraform init
-terraform fmt
-terraform validate
-terraform plan
-terraform apply
-```
 
 ---
 
