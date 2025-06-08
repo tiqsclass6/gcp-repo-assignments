@@ -1,0 +1,103 @@
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router_nat
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_address
+
+# Iowa NAT
+
+resource "google_compute_router_nat" "iowa" {
+  name   = "iowa"
+  router = google_compute_router.iowa.name
+  region = "us-central1"
+
+  source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
+  nat_ip_allocate_option             = "MANUAL_ONLY"
+
+  subnetwork {
+    name                    = google_compute_subnetwork.iowa.id
+    source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
+  }
+
+  nat_ips = [google_compute_address.iowa.self_link]
+}
+
+resource "google_compute_address" "iowa" {
+  name         = "iowa"
+  address_type = "EXTERNAL"
+  network_tier = "PREMIUM"
+  region       = "us-central1"
+}
+
+
+# Italy NAT
+
+resource "google_compute_router_nat" "italy" {
+  name   = "italy"
+  router = google_compute_router.italy.name
+  region = "europe-west8"
+
+  source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
+  nat_ip_allocate_option             = "MANUAL_ONLY"
+
+  subnetwork {
+    name                    = google_compute_subnetwork.italy.id
+    source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
+  }
+
+  nat_ips = [google_compute_address.italy.self_link]
+}
+
+resource "google_compute_address" "italy" {
+  name         = "italy"
+  address_type = "EXTERNAL"
+  network_tier = "PREMIUM"
+  region       = "europe-west8"
+}
+
+# Brazil NAT
+
+resource "google_compute_router_nat" "brazil" {
+  name   = "brazil"
+  router = google_compute_router.brazil.name
+  region = "southamerica-east1"
+
+  source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
+  nat_ip_allocate_option             = "MANUAL_ONLY"
+
+  subnetwork {
+    name                    = google_compute_subnetwork.brazil.id
+    source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
+  }
+
+  nat_ips = [google_compute_address.brazil.self_link]
+}
+
+resource "google_compute_address" "brazil" {
+  name         = "brazil"
+  address_type = "EXTERNAL"
+  network_tier = "PREMIUM"
+  region       = "southamerica-east1"
+}
+
+# Tokyo NAT
+
+resource "google_compute_router_nat" "tokyo" {
+  name   = "tokyo"
+  router = google_compute_router.tokyo.name
+  region = "asia-northeast1"
+
+  source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
+  nat_ip_allocate_option             = "MANUAL_ONLY"
+
+  subnetwork {
+    name                    = google_compute_subnetwork.tokyo.id
+    source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
+  }
+
+  nat_ips = [google_compute_address.tokyo.self_link]
+}
+
+resource "google_compute_address" "tokyo" {
+  name         = "tokyo"
+  address_type = "EXTERNAL"
+  network_tier = "PREMIUM"
+  region       = "asia-northeast1"
+}
