@@ -1,4 +1,3 @@
-
 # 🌍 GitHub Weekly Assignments (Summary)
 
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)
@@ -75,6 +74,19 @@ This repository contains multiple modular GCP infrastructure deployments using *
   - Autoscaling policy configuration
   - `brazil.sh`, `italy.sh`, `iowa.sh`, and `tokyo.sh`
   - Screenshot documentation for verification
+
+---
+
+### 🔹 [`assignment-06072025`](https://github.com/tiqsclass6/gcp-repo-assignments/tree/assignment-06072025)
+
+- **Focus**: Full-stack GCP deployment with Global Load Balancer and cross-region autoscaling.
+- **Includes**:
+  - Zonal Managed Instance Groups (MIGs) in Iowa, Brazil, Italy, and Tokyo
+  - Startup scripts customized per region using metadata
+  - Global backend service with Terraform-defined `capacity_scaler` for even traffic
+  - HTTP health checks and auto-healing policies
+  - `README.md` with screenshot integration and dynamic Terraform outputs
+  - `SC1-iowa.sh`, `SC2-italy.sh`, `SC3-brazil.sh`, `SC4-tokyo.sh` scripts
 
 ## 🚀 Getting Started
 
