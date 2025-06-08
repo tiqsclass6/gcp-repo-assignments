@@ -1,8 +1,8 @@
 # GCP Assignment (06-07-2025)
 
 ![Terraform GCP](https://img.shields.io/badge/Terraform-GCP-blueviolet?logo=terraform&logoColor=white)
-![Last Commit](https://img.shields.io/github/last-commit/tiqsclass6/gcp-repo-build-05312025?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/tiqsclass6/gcp-repo-build-05312025)
+![Last Commit](https://img.shields.io/github/last-commit/tiqsclass6/gcp-repo-assignments?style=flat-square)
+![Branch: assignment-06072025](https://img.shields.io/badge/Branch-assignment--06072025-blue)
 ![GCP Enabled](https://img.shields.io/badge/GCP-Enabled-4285F4?logo=googlecloud&logoColor=white)
 ![Made with Terraform](https://img.shields.io/badge/Made%20with-Terraform-5F43E9?logo=terraform)
 ![Project Status](https://img.shields.io/badge/Status-Stable-brightgreen)
