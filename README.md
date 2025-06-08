@@ -122,7 +122,6 @@ Replace `<branch-name>` with any of the listed branches above.
 - **Shields.io** – Repo badges for status, size, commits, etc.
 - **GCP Console UI** – For screenshot validation of deployment results
 
-
 ---
 
 ## 📬 Contact
