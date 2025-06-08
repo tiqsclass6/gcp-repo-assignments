@@ -108,10 +108,20 @@ Replace `<branch-name>` with any of the listed branches above.
 
 ## 🧰 Tools Used
 
-- Terraform (IaC)
-- GCP (VPC, Compute, NAT, Router, IAM)
-- Linux startup scripts
-- Shell scripting (custom region initialization)
+- **Terraform** – Infrastructure as Code (IaC) for declarative resource provisioning
+- **Google Cloud Platform (GCP)** – Compute Engine, VPC, Subnetworks, NAT, Load Balancer, IAM, Cloud Router
+- **Global HTTP Load Balancer** – With URL maps, backend services, and forwarding rules
+- **Managed Instance Groups (MIGs)** – Zonal deployment, autoscaling, and health checks
+- **Linux Startup Scripts** – Custom regional Apache web servers (`SC1-iowa.sh`, `SC2-italy.sh`, `SC3-brazil.sh`, `SC4-tokyo.sh`)
+- **Firewall Rules** – Port/tag-based restrictions (SSH, HTTP, RDP)
+- **Cloud NAT & Routers** – Regional egress configuration
+- **Google Metadata Server** – Used to inject dynamic content into web server pages
+- **Shell Scripting** – Metadata retrieval and dynamic HTML rendering
+- **GitHub Branching** – Weekly infrastructure expansions using assignment branches
+- **Markdown Documentation** – Structured `README.md` with screenshots and project tree
+- **Shields.io** – Repo badges for status, size, commits, etc.
+- **GCP Console UI** – For screenshot validation of deployment results
+
 
 ---
 
