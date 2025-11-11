@@ -10,7 +10,7 @@ resource "google_compute_instance" "iowa" {
   }
 
   network_interface {
-    subnetwork = google_compute_subnetwork.iowa-private1.name
+    subnetwork = google_compute_subnetwork.iowa1.name
     
     access_config {}
   }
