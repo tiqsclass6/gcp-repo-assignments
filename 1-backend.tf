@@ -1,13 +1,14 @@
 terraform {
   backend "gcs" {
-    bucket      = "your-bucket-name"                  # Insert your bucket name here
-    prefix      = "terraform/state"
-    credentials = "yourjsonkey.json"                  # Insert your json credentials here
+    bucket      = "your-project-id"           # Insert your project ID here
+    prefix      = "MMDDYYYY/terraform/state"
+    credentials = "yourjsoncert.json"         # Insert your json credential here
   }
+
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "~> 4.0"
+      version = "~> 5.0"
     }
   }
 }
